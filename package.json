@@ -1,0 +1,15 @@
+{
+  "name": "Project1_Modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "sabbir",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

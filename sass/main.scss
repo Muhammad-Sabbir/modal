@@ -1,0 +1,64 @@
+$button-color:#47A386;
+$modal-background:#A6A6A6;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+button{
+    padding: 15px 20px;
+    background-color: $button-color;
+    border: none;
+    transform: scale(1);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    &:active{
+        transform: scale(0.8);
+    }
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    .btn-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .modal-background{
+        height: 100%;
+        width: 100%;
+        background: $modal-background;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+        .modal-container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 20%;
+            padding: 50px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background: white;
+            h1{
+                margin-bottom: 10px;
+    
+            }
+            p{
+                margin: 20px 0;
+            }
+        }
+            
+    }
+    .show-modal{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

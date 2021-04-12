@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow: hidden; }
+
+button {
+  padding: 15px 20px;
+  background-color: #47A386;
+  border: none;
+  transform: scale(1);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  outline: none; }
+  button:active {
+    transform: scale(0.8); }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+  .container .btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .container .modal-background {
+    height: 100%;
+    width: 100%;
+    background: #A6A6A6;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease; }
+    .container .modal-background .modal-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%;
+      padding: 50px;
+      border: 1px solid green;
+      border-radius: 5px;
+      background: white; }
+      .container .modal-background .modal-container h1 {
+        margin-bottom: 10px; }
+      .container .modal-background .modal-container p {
+        margin: 20px 0; }
+  .container .show-modal {
+    opacity: 1;
+    pointer-events: auto; }
